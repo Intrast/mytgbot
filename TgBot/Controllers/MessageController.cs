@@ -26,7 +26,7 @@ namespace TgBot.Controllers
             {
                 if (command.Contains(message.Text))
                 {
-                    command.Execute(message, client);
+                    await command.Execute(message, client);
                     break;
                 }
             }
