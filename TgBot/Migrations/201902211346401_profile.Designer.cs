@@ -7,13 +7,13 @@ namespace TgBot.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class ChatId : IMigrationMetadata
+    public sealed partial class profile : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ChatId));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(profile));
         
         string IMigrationMetadata.Id
         {
-            get { return "201902141059310_ChatId"; }
+            get { return "201902211346401_profile"; }
         }
         
         string IMigrationMetadata.Source

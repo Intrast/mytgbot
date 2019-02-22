@@ -151,13 +151,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201902140921250_InitialCreate.cs" />
-    <Compile Include="Migrations\201902140921250_InitialCreate.Designer.cs">
-      <DependentUpon>201902140921250_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201902141059310_ChatId.cs" />
-    <Compile Include="Migrations\201902141059310_ChatId.Designer.cs">
-      <DependentUpon>201902141059310_ChatId.cs</DependentUpon>
+    <Compile Include="Migrations\201902211346401_profile.cs" />
+    <Compile Include="Migrations\201902211346401_profile.Designer.cs">
+      <DependentUpon>201902211346401_profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppSettings.cs" />
@@ -202,6 +198,13 @@
     <Content Include="Views\Profiles\Details.cshtml" />
     <Content Include="Views\Profiles\Edit.cshtml" />
     <Content Include="Views\Profiles\Index.cshtml" />
+    <Content Include="Web.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -220,11 +223,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201902140921250_InitialCreate.resx">
-      <DependentUpon>201902140921250_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201902141059310_ChatId.resx">
-      <DependentUpon>201902141059310_ChatId.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201902211346401_profile.resx">
+      <DependentUpon>201902211346401_profile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

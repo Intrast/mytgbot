@@ -18,17 +18,10 @@ namespace TgBot.Models.Commands
             var chatId = message.Chat.Id;
             Profile profile = new Profile();
             profile.Name = message.From.FirstName;
-            profile.ChatId = chatId;
-            if (db.Profiles.Find(chatId) != null)
-            {
-                await client.SendTextMessageAsync(chatId, "you are in database");
-            }
-            else
-            {
-                db.Profiles.Add(profile);
-                db.SaveChanges();
+            profile.ChatId = chatId; 
+            db.Profiles.Add(profile);
+            await db.SaveChangesAsync();
             await client.SendTextMessageAsync(chatId, "Bot for profile");
-            }
         }
     }
 }

@@ -10,7 +10,6 @@ namespace TgBot.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "TgBot.Models.ProfileContext";
         }
 
         protected override void Seed(TgBot.Models.ProfileContext context)
