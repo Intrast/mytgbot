@@ -16,11 +16,15 @@ namespace TgBot.Models.Commands
         public override async Task Execute(Message message, TelegramBotClient client)
         {
             var chatId = message.Chat.Id;
+            var user = db.Profiles.Where(p => p.ChatId == chatId).FirstOrDefault();
             Profile profile = new Profile();
             profile.Name = message.From.FirstName;
-            profile.ChatId = chatId; 
-            db.Profiles.Add(profile);
-            await db.SaveChangesAsync();
+            profile.ChatId = chatId;
+            if (user == null)
+            {
+                db.Profiles.Add(profile);
+                await db.SaveChangesAsync();
+            }
             await client.SendTextMessageAsync(chatId, "Bot for profile");
         }
     }
