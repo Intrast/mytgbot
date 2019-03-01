@@ -155,6 +155,18 @@
     <Compile Include="Migrations\201902211346401_profile.Designer.cs">
       <DependentUpon>201902211346401_profile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902270903546_new_model_profile.cs" />
+    <Compile Include="Migrations\201902270903546_new_model_profile.Designer.cs">
+      <DependentUpon>201902270903546_new_model_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902280015072_val.cs" />
+    <Compile Include="Migrations\201902280015072_val.Designer.cs">
+      <DependentUpon>201902280015072_val.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902281218281_newField.cs" />
+    <Compile Include="Migrations\201902281218281_newField.Designer.cs">
+      <DependentUpon>201902281218281_newField.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AppSettings.cs" />
     <Compile Include="Models\Bot.cs" />
@@ -162,6 +174,7 @@
     <Compile Include="Models\Commands\HelloCommand.cs" />
     <Compile Include="Models\Commands\ListCommand.cs" />
     <Compile Include="Models\Commands\StartCommand.cs" />
+    <Compile Include="Models\Commands\UserProfileCommand.cs" />
     <Compile Include="Models\Profile.cs" />
     <Compile Include="Models\ProfileContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -225,6 +238,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201902211346401_profile.resx">
       <DependentUpon>201902211346401_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902270903546_new_model_profile.resx">
+      <DependentUpon>201902270903546_new_model_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902280015072_val.resx">
+      <DependentUpon>201902280015072_val.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902281218281_newField.resx">
+      <DependentUpon>201902281218281_newField.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,7 +10,7 @@ namespace TgBot.Models.Commands
 {
     public class HelloCommand : Command
     {
-        public override string Name => "hello";
+        public override string Name => "/hello";
 
         public override async Task Execute(Message message, TelegramBotClient client)
         {

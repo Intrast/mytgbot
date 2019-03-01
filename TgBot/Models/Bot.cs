@@ -27,6 +27,7 @@ namespace TgBot.Models
             commandsList.Add(new HelloCommand());
             commandsList.Add(new ListCommand());
             commandsList.Add(new StartCommand());
+            commandsList.Add(new UserProfileCommand());
             //TODO: Add more commands
 
 

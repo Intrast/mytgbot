@@ -10,7 +10,7 @@ namespace TgBot.Models.Commands
 {
     public class ListCommand : Command
     {
-        public override string Name => "commandlist";
+        public override string Name => "/commandlist";
 
         public override async Task Execute(Message message, TelegramBotClient client)
         {
